@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: #8B0000; /* Vermelho escuro (dos lábios) */
+    background-color: #8B0000; 
     padding: 10px 0;
 }
 
@@ -33,14 +33,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #A52A2A; /* Marrom avermelhado (do chapéu) */
+    background-color: #A52A2A; 
     border-radius: 5px;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #A52A2A; /* Marrom avermelhado */
+    background-color: #A52A2A; 
     top: 100%;
     left: 0;
     min-width: 150px;
@@ -58,7 +58,7 @@ nav ul li a:hover {
 }
 
 .dropdown-content li a:hover {
-    background-color: #CD5C5C; /* Vermelho suave (do fundo) */
+    background-color: #CD5C5C; 
 }
 
 .dropdown:hover .dropdown-content {
@@ -113,3 +113,125 @@ footer{
         font-size: 16px;
     }
 }
+
+
+.contact{
+    padding: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #CD5C5C;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact label{
+    text-align: left;
+    font-weight: bold;
+}
+
+.contact input[type="text"], .contact input[type="email"],
+.contact textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #A52A2A;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact textarea{
+    resize: none;
+}
+
+.contact button{
+    padding: 10px 15px;
+    background-color: #8B0000;
+    color: #f30909;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.contact button:hover{
+    background-color: #a52a2af1;
+}
+
+@media(max-width: 768px){
+    .contact{
+        padding: 15px;
+    }
+    .contact form{
+        padding: 15px;
+    }
+}
+
+.about, .mission, .team{
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+h1, h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #CD5C5C;
+}
+P{
+    font-size: 18px;
+    line-height: 1.6;
+    color: #cd5c5cea;
+}
+.mission-values {
+    display: flex;
+    flex-direction: row; /* Garante que os itens fiquem lado a lado */
+    justify-content: space-between; /* Espaço entre os itens */
+    gap: 20px; /* Espaçamento entre os itens */
+    flex-wrap: wrap; /* Permite quebrar linha se necessário */
+}
+
+.mission-item {
+    flex: 1 1 280px; /* Garante que cada item tenha no mínimo 280px de largura */
+    background-color: #CD5C5C;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Melhorando a sombra */
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.mission-item h3 {
+    font-size: 24px;
+    color: #8B0000;
+    margin-bottom: 10px;
+}
+
+.mission-item p, .mission-item ul {
+    color: #8B0000;
+    font-size: 16px;
+}
+
+.mission-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+footer {
+    background-color: #8B0000;
+    color: #CD5C5C;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    height: 10%;
+}
+
+

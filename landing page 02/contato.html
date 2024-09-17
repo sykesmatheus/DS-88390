@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>lading page 02</title>
+    <title>Contato</title>
 </head>
 <body>
     <header>
@@ -25,13 +25,26 @@
         </nav>
     </header>
     <main>
-        <section class="content">
-            <h1>Taylor Swift</h1>
-            <p>Taylor Swift é uma cantora e compositora americana, famosa por sua versatilidade musical e letras pessoais. </p>
-            <img src="img/main.jpg" alt="Imagem de um computador">
+        <section class="contact">
+            <h1>Entre em contato conosco</h1>
+            <p>Envie-nos uma mensagem preenchendo o formulário abaixo</p>
+
+            <form action="#" method="post">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Seu email">
+
+                <label for="assunto">Assunto</label>
+                <input type="text" id="assunto" name="assunto" required placeholder="Assunto da mensagem">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" required placeholder="Escreva sua mensagem" rows="5"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            
         </section>
     </main>
-
     <footer>
         <p>&copy; 2024 - Todos os direitos reservados.</p>
     </footer>
