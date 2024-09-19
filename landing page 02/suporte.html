@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Início</a></li>
+                <li class="dropdown">
+                    <a href="consultoria.html">Serviços</a>
+                    <ul class="dropdown-content">
+                        <li><a href="consultoria.html">Consultoria</a></li>
+                        <li><a href="suporte.html">Suporte</a></li>
+                        <li><a href="desenvolvimento.html">Desenvolvimento</a></li>
+                    </ul>
+                </li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact">
+            <h1>Suporte</h1>
+            <p class="canais">Nossos canais para contato:
+                <br>
+                Telefone: 0800 123 4567
+                <br>
+                E-mail: taylorsuporte@gmail.com
+                <br>
+                Ou nos envie uma mensagem preenchendo o formulário abaixo:
+            </p>
+            
+            
+            <form action="#" method="post">
+                
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Seu email para receber atualizações">
+
+                <label for="assunto">Descrição Breve:</label>
+                <input type="text" id="assunto" name="assunto" required placeholder="Breve">
+
+                <label for="mensagem">Descrição Detalhada:</label>
+                <textarea id="mensagem" name="mensagem" required placeholder="Escreva sua mensagem" rows="5"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
