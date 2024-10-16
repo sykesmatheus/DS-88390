@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Consulta CNPJ</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Consulta de CNPJ</h2>
+        <form id="cepForm">
+            <label for="cep">CEP</label>
+            <input type="text" id="cep" name="cep" maxlength="14" required>
+            <button type="button" onclick="consultarCnpj()">Consultar</button>
+        </form>
+        <div id="resultado">
+            <p><strong>Razão Social: </strong> <span id="razao_social"></span></p>
+            <p><strong>Nome Fantasia: </strong> <span id="nome_fantasia"></span></p>
+            <p><strong>Cidade: </strong> <span id="cidade"></span></p>
+            <p><strong>Estado: </strong> <span id="estado"></span></p>
+            <p><strong>CNAE Principal: </strong> <span id="cnae"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
